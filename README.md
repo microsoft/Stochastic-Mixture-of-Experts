@@ -1,14 +1,25 @@
-# Project
+# THOR: Transformer with Stochastic Experts
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This PyTorch package implements Taming Sparsely Activated Transformer with Stochastic Experts.
 
-As the maintainer of this project, please make a few updates:
+## Installation
+* The most convenient way to run the code is to use this docker image: `tartarusz/adv-train:azure-pytorch-apex-v1.7.0`. 
+  The image supports running on Microsoft Azure.
+* Our implementation is based on [Fairseq](https://github.com/pytorch/fairseq).
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Instructions
+* Download [Fairseq](https://github.com/pytorch/fairseq) (v1.0.0+) to the current directory.
+* Run `pip install -e .` to install the package locally.
+* To run a sample translation task on IWSLT'14 De-En, 
+  first follow the instructions [here](https://github.com/pytorch/fairseq/blob/main/examples/translation/README.md)
+  to download and tokenize the data, then use `bash preprocess.sh` to pre-process the tokenized data.
+* Run `bash run.sh` to train a THOR model.
+
+## Notes
+
+### Contact Information
+
+For personal communication related to this package, please contact Simiao Zuo (`simiaozuo@gatech.edu`), Xiaodong Liu (`xiaodl@microsoft.com`), or Jian Jiao (`jian.jiao@microsoft.com`).
 
 ## Contributing
 
